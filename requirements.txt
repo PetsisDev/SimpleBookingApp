@@ -1,0 +1,5 @@
+flask
+pytz
+oauth2client
+gspread
+waitress

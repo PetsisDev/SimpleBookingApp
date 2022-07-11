@@ -1,0 +1,270 @@
+/* GENERAL */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: url(./images/main-page.png) no-repeat top center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header
+{
+    margin: 0 50px;
+    position: absolute;
+}
+
+label
+{
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.form
+{
+    margin: 35px auto;
+    position: center;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 5px solid #f22626;
+    padding: 10px;
+    width: 650px;
+    height: 880px;
+  }
+
+h2
+{
+    color: #f22626;
+    font-size: 40px;
+    font-family: 'airstrike', serif;
+}
+
+h5
+{
+    color: #f22626;
+    font-size: 35px;
+    font-family: 'airstrike', serif;
+    text-shadow:1px 1px #fff;
+}
+
+h6
+{
+    color: #fff;
+    font-size: 17px;
+}
+
+.banner
+{
+    height: 100%;
+    opacity: 85%;
+    display: flex;
+    float: right;
+    position: fixed;
+    right: 0px;
+    bottom:0px;
+    z-index: -999;
+}
+
+#pack
+{
+    font-size: 15px;
+    color: black;
+}
+
+input[type="id"]
+{
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f;/*color: #58AA3D;*/
+    border-radius: 5px;
+}
+
+input[type="text"]
+{
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f; /*color: #58AA3D;*/
+    border-radius: 5px;
+}
+
+input[type="date"]
+{
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f;/*color: #58AA3D;*/
+    border-radius: 5px;
+}
+
+input[type="time"]
+{
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f;/*color: #58AA3D;*/
+    border-radius: 5px;
+}
+
+input[type="number"]
+{
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f;/*color: #58AA3D;*/
+    border-radius: 5px;
+}
+
+input[type="tel"]
+{
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f;/*color: #58AA3D;*/
+    border-radius: 5px;
+}
+
+#departure
+{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f;/*color: #58AA3D;*/
+    border-radius: 5px;   
+}
+
+#payment_option
+{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f;/*color: #58AA3D;*/
+    border-radius: 5px;   
+}
+
+#destination
+{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f;
+    border-radius: 5px;   
+}
+
+#channel
+{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f;
+    border-radius: 5px;   
+}
+
+#car_type
+{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 20px;
+    border: 2px solid #f7c21f;
+    border-radius: 5px;   
+}
+
+#note
+{
+    text-align: center;
+    width: 250 px;
+    height: 150px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#note-box
+{
+    width: 500px;
+    height: 35px;
+}
+
+.button1
+{
+    background: #f22626;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.button1:hover
+{
+    color: #ffffff;
+    background: #f22626;
+}
+
+/* FOOTER */
+
+  .footer-menu
+  {
+    background: #f22626;
+    border-top: 5px solid #f7c21f;
+    width: 100%;
+    bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    padding: 7px;
+    margin: 0 auto;
+  }
+
+.item
+{
+  width: 750px;
+  padding: 10px;
+  vertical-align: middle;
+  align-content: center;
+  align-items: center;
+}
+
+.phone-number
+{
+    width: 250px;
+}
+
+i
+{
+    color: #f7c21f;
+}
+
+a
+{
+    font-size: 17px;
+    font-weight: bold;
+    color: #f7c21f;
+}
+
+a:hover
+{
+    font-size: 110%;
+}
+
+a:visited
+{
+    color: #f7c21f;
+}

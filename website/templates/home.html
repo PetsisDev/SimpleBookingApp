@@ -1,0 +1,152 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% block content %}
+
+<div class="form" align='center';>
+<form id="bookForm" method='POST'>
+
+
+	<h2>Seller</h2>
+	
+		<label for="seller_id">ID:</label><br>
+		<input type="id" name="seller_id"/>
+		<br><br>
+
+	<h2>Customer</h2>
+		<input type="text" name="customer_name" placeholder='Full Name' required/>
+		<input type="text" name="passport_number" placeholder='passport' required/>
+		<br><br>
+
+		<label for="whats_app_phone_number">What's App</label>
+		<input type="text" name="whats_app_phone_number" placeholder='Phone Number'/>
+		<label for="telegram_phone_number">Telegram</label>
+		<input type="text" name="telegram_phone_number" placeholder='Phone Number'/>
+		<br><br>
+
+		<label for="facebook_name">Facebook</label>
+		<input type="text" name="facebook_name" placeholder='Facebook Name'/>
+		<label for="email">Email</label>
+		<input type="text" name="email" placeholder='Email'/>
+		<br><br>
+
+	
+		<label for="luggage">Luggage</label>
+		<input type="text" name="luggage" placeholder='Packs'/>
+
+		
+		<select id="payment_option" name="payment_option" required>
+			<option value="" disabled selected>Payment Option</option>
+			
+			<option value="ABA">ABA</option>
+			<option value="Wing">Wing</option>
+			<option value="Cash">Cash</option>
+
+		</select>
+
+	
+		<br><br>
+	
+
+
+
+	
+	<h2>Your Trip</h2><br>
+		<label for="date">Date</label>
+		<input type="date" name="date" required/>
+		
+		<label for="time">Desired Time</label>
+		<input type="time" name="time"/>
+		<br><br>
+		
+		<label for="departure">Departure</label>
+			<select id="departure" name="departure" required>
+				<option value="" disabled selected>select start</option>
+				
+				<option value="battambang">Battambang</option>
+				<option value="bavet">Bavet</option>
+				<option value="ho_chi_minh">Ho Chi Minh</option>
+				<option value="kampot">Kampot</option>
+				<option value="kep">Kep</option>
+				<option value="koh kong">Koh Kong</option>
+				<option value="kratié">Kratié</option>
+				<option value="mondulkiri">Mondulkiri</option>
+				<option value="phnom penh">Phnom Penh</option>
+				<option value="poipet">Poipet</option>
+				<option value="ratanakiri">Ratanakiri</option>
+				<option value="siem reap">Siem Reap</option>
+				<option value="sihanoukville">Sihanoukville</option>
+				<option value="ha tién">Ha Tién</option>
+				
+			</select>
+
+
+	
+		<label for="destination">Destination</label>
+			<select id="destination" name="destination" required>
+				<option value="" disabled selected>select destination</option>
+				
+				<option value="battambang">Battambang</option>
+				<option value="bavet">Bavet</option>
+				<option value="ho_chi_minh">Ho Chi Minh</option>
+				<option value="kampot">Kampot</option>
+				<option value="kep">Kep</option>
+				<option value="koh kong">Koh Kong</option>
+				<option value="kratié">Kratié</option>
+				<option value="mondulkiri">Mondulkiri</option>
+				<option value="phnom penh">Phnom Penh</option>
+				<option value="poipet">Poipet</option>
+				<option value="ratanakiri">Ratanakiri</option>
+				<option value="siem reap">Siem Reap</option>
+				<option value="sihanoukville">Sihanoukville</option>
+				<option value="ha tién">Ha Tién</option>
+				
+			</select> 
+		<br><br>
+	<label for="pick_up">Pick up</label>
+			<input type="text" name="pick_up"/>
+		<label for="drop_off">Drop off</label>
+			<input type="text" name="drop_off"/>
+			<br><br>
+	
+
+		<label for="car_type">Car Type</label>
+			<select id="car_type" name="car_type" required>
+				<option value="" disabled selected>select car type</option>
+				<option value="suv_shared">SUV (shared)</option>
+				<option value="suv_private">SUV (private)</option>
+				<option value="mini_van_shared">Mini Van ECO 15seat</option>
+				<option value="mini_van_private">Mini Van VIP 10seat</option>
+			</select>
+		
+		<label for="seats">No. of Seats</label>
+			<input type="number" name="seats" required/>
+		<br><br><br>
+
+	<label id="note" for="notes">Notes:</label><br>
+	<input id="note-box" type="text" name="notes"/>
+		
+	<br><br>
+	
+	<input type="submit" value="Go!" class="button1">
+
+</form>
+</div>
+
+<div class="banner"><img src="./static/images/race_banner.png"></div>
+
+	
+<footer>
+	<div class="footer-menu">
+		<div class="item"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>&nbsp;
+			<a href="" target="_blank">Your Facebook link here</a></div>
+		<div class="item">
+			<i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>&nbsp;
+			<i class="fa fa-telegram fa-lg" aria-hidden="true"></i>&nbsp;
+			<i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>&nbsp;
+			<a href="">+xx xxxxxxx</a>
+		</div>
+  	 </div>
+</footer>
+<div>{{ data }}</div>
+
+
+{% endblock %}

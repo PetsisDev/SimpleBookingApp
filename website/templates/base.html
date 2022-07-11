@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Make a Taxi Booking</title>
+	<link rel="stylesheet" href="./static/css/styles.css">
+	<link href="http://fonts.cdnfonts.com/css/airstrike" rel="stylesheet">
+
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="">
+	<meta name="description" content="">
+	 <style>
+</style> 
+</head>
+
+
+<header>
+	<img src="./static/images/logo.png" id="logo" style="width:200px;"><br><br><br>
+
+</header>
+
+
+
+ 
+<div align='center'>
+	{% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+
+                    {% for category, message in messages %}
+                        {% if category == 'error' %}
+                            <div class="alert alert-danger alter-dismissable fade show" role="alert">
+                                {{ message }}
+                                <button type='button' class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                        {% else %}
+                            <div class="alert alert-success alter-dismissable fade show" role="alert">
+                                {{ message }}
+                                <button type='button' class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+
+                {% endif %}
+            {% endwith %}
+
+</div>
+	<body>{% block content %}{% endblock %}</body>
+	</html>
